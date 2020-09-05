@@ -4,7 +4,8 @@
   "description": "This is API for smart home system",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
+    "stop": "forever stop app.js",
     "test": "test"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "homepage": "smart-home/api",
   "dependencies": {
     "express": "^4.17.1",
+    "forever": "^3.0.2",
     "totoro-node": "^2.0.5"
   }
 }
