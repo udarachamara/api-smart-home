@@ -1,0 +1,23 @@
+{
+  "name": "api-smart-home",
+  "version": "1.0.0",
+  "description": "This is API for smart home system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udarachamara/api-smart-home.git"
+  },
+  "author": "udara chamara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udarachamara/api-smart-home/issues"
+  },
+  "homepage": "smart-home/api",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
