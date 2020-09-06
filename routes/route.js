@@ -1,10 +1,9 @@
 var express = require('express'),
     router = express.Router();
 
-router
-    // Add a binding to handle '/tests'
-    .get('/', function (req, res) {
-        res.send("This is version 1 routes..");
-    })
+var userController = require('../controllers/user.controller')
+
+router.get('/user', userController.getUsers)
+router.get('/user/:id', userController.getUser)
 
 module.exports = router;
